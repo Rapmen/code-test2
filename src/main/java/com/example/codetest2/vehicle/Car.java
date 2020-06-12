@@ -1,4 +1,9 @@
-package com.example.codetest2;
+package com.example.codetest2.vehicle;
+
+import com.example.codetest2.behavior.TurnAction;
+import com.example.codetest2.locale.Locale;
+import com.example.codetest2.location.Orientation;
+import com.example.codetest2.location.Position;
 
 public class Car extends Vehicle {
 
@@ -9,12 +14,21 @@ public class Car extends Vehicle {
     @Override
     public void move() throws Exception {
         Position position = getPosition();
-        int x = getOrientation() == Orientation.E ? position.getX() + 1
-            : getOrientation() == Orientation.W ? position.getX() - 1 : position.getX();
+        int x = position.getX();
+        if (getOrientation() == Orientation.E) {
+            x += 1;
+        } else if (getOrientation() == Orientation.W) {
+            x += -1;
+        }
         position.setX(x);
-        int y = getOrientation() == Orientation.N ? position.getX() + 1
-            : getOrientation() == Orientation.S ? position.getX() - 1 : position.getY();
+        int y = position.getY();
+        if (getOrientation() == Orientation.N) {
+            y += 1;
+        } else if (getOrientation() == Orientation.S) {
+            y += -1;
+        }
         position.setY(y);
+
         noticeLocale();
     }
 

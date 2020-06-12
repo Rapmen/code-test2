@@ -1,4 +1,4 @@
-package com.example.codetest2;
+package com.example.codetest2.locale;
 
 import lombok.Getter;
 import lombok.NonNull;
@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 public abstract class Locale {
 
     @Getter
-    protected String name;
+    private String name;
 
     @NonNull
     @Getter
@@ -22,5 +22,5 @@ public abstract class Locale {
         this.name = name;
     }
 
-    abstract void checkPosition(int x, int y) throws Exception;
+    public abstract void checkPosition(int x, int y) throws Exception;
 }

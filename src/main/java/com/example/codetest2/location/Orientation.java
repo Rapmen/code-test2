@@ -1,4 +1,4 @@
-package com.example.codetest2;
+package com.example.codetest2.location;
 
 import lombok.Getter;
 

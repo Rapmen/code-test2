@@ -1,7 +1,9 @@
-package com.example.codetest2;
+package com.example.codetest2.locale;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.codetest2.vehicle.Vehicle;
 
 import lombok.Getter;
 import lombok.Setter;

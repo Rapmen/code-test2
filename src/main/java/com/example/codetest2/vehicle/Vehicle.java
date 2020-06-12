@@ -1,4 +1,9 @@
-package com.example.codetest2;
+package com.example.codetest2.vehicle;
+
+import com.example.codetest2.behavior.TurnAction;
+import com.example.codetest2.locale.Locale;
+import com.example.codetest2.location.Orientation;
+import com.example.codetest2.location.Position;
 
 import lombok.Getter;
 import lombok.Setter;
